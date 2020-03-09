@@ -1,0 +1,65 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+{% block style %}
+<style>
+    body {
+        background-image: url("https://jmgads.com/vjsite/ss/7reasons.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+}
+
+    h1 {
+        text-align: center;
+        margin-top: 25%;
+}
+    #help {
+        margin-top: 40%;
+}
+
+</style>
+{% endblock %}
+
+    <div>
+        <img id="logo" src="{% static 'blog/logo.png' %}" alt="IsraHelp Logo" width="150" height="150">
+    </div>
+
+
+    <h1>Welcome to IsraHelp! <br> How can WE, help YOU?</h1>
+    <a style="margin-left: 200px; color:red" href="#help">Get Help</a>
+
+    <container><br><br><br><br>
+        <div id="help">
+            <br><br><br>
+            <h2 style="color:red">Making Aliya?</h2>
+            <a style="color:black" href="https://nefesh.auth0.com/login?state=g6Fo2SA1NlpFTTh2SWhueklZbG5Tay1GMWU4WFUzdld6Q1psV6N0aWTZIG5GaWQ2dGtvU1Z4S0V1N2l2bzloRHQzdUIxTHM4U0swo2NpZNkgVkY4dVZBWlJhbEJQWGx3NDI0bDZRMElkN0NLdTFXTzI&client=VF8uVAZRalBPXlw424l6Q0Id7CKu1WO2&protocol=oauth2&response_type=token%20id_token&redirect_uri=https%3A%2F%2Fapply.nbn.org.il%2Fcallback&scope=openid%20profile&audience=https%3A%2F%2Fnefesh.auth0.com%2Fuserinfo&nonce=8K37VD5PQJyYGsf~UvJdwGup7xjDxdFM&auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS41LjEifQ%3D%3D">Start the Process Here</a>
+        </div>
+
+        <div>
+            <h2 style="color:red">Already made Aliya? Learn about your rights!</h2>
+            <a style="color:black" href="https://www.gov.il/en/departments/ministry_of_aliyah_and_integration">Ministry of Absorption</a>
+        </div>
+        <div>
+            <h2 style="color:red">Thinking about joining the Army?</h2>
+            <a style="color:black" href="https://www.idf.il/en/">Embrace your Zionistic desires!</a>
+        </div>
+        <div>
+            <h2 style="color:red">How to get  around the country:</h2>
+            <a style="color:black" href="https://www.egged.co.il/HomePage.aspx">Free time? Try the scenic route!</a><br>
+            <a style="color:black" href="https://www.rail.co.il/en">Point A to B, no time for shtick!</a>
+        </div>
+        <br><br><br>
+    </container>
+
+
+
+{% endblock content %}
